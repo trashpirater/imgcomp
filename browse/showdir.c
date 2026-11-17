@@ -373,6 +373,7 @@ void MakeHtmlOutput(Dir_t * Dir)
     printf(
         "<style type=text/css>\n"
         "  body { font-family: sans-serif; font-size: 24;}\n"
+        "  @media (prefers-color-scheme: dark) { body { background-color: #000 !important; color: #fff !important; } a:link { color: #8ab4f8; } a:visited { color: #c58af9; } span.wkend { background-color: #333 !important; } div.pix img { background-color: #222 !important; } button { background-color: #333 !important; color: #fff !important; } }\n"
         "  img { vertical-align: middle; margin-bottom: 5px; }\n"
         "  p {margin-bottom: 0px}\n"
         "  span.a {font-family: courier; font-weight: bold; font-size: 14px;}\n"

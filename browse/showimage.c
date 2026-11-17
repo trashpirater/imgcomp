@@ -42,6 +42,7 @@ void MakeImageHtmlOutput(char * ImageName, Dir_t * dir, float AspectRatio)
     
     printf("<style type=text/css>\n"
            "  body { font-family: sans-serif; font-size: 22;}\n"
+        "  @media (prefers-color-scheme: dark) { body { background-color: #000 !important; color: #fff !important; } a:link { color: #8ab4f8; } a:visited { color: #c58af9; } span.wkend { background-color: #333 !important; } div.pix img { background-color: #222 !important; } button { background-color: #333 !important; color: #fff !important; } }\n"
            "  img { vertical-align: middle; margin-bottom: 5px; }\n"
            "  p {margin-bottom: 0px}\n"
            "  a {text-decoration: none;}\n"

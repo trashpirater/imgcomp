@@ -53,9 +53,10 @@ function UpdateActagram(){
     // clear canvas so we don't draw on top of it each time
     ctx.clearRect(0, 0, canv.width, canv.height);
 
+    var dark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
     // draw 10 minute scale stripe background as first layer
     for (a=0;a<60;a+=10){
-        ctx.fillStyle = a % 20 == 0 ? "#ffffff" : "#ebebeb";
+        ctx.fillStyle = a % 20 == 0 ? (dark ? "#303030" : "#ffffff") : (dark ? "#202020" : "#ebebeb");
         var histX = a*HIST_BINS/60*per_hist_bar
         ctx.fillRect(histX, 0, canv.width/6, canv.height);
     }

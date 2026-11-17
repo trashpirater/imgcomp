@@ -130,6 +130,7 @@ void ShowActagram(int all, int h24)
     printf(
         "<style type=text/css>\n"
         "  body { font-family: sans-serif; font-size: 20;}\n"
+        "  @media (prefers-color-scheme: dark) { body { background-color: #000 !important; color: #fff !important; } a:link { color: #8ab4f8; } a:visited { color: #c58af9; } span.wkend { background-color: #333 !important; } div.pix img { background-color: #222 !important; } button { background-color: #333 !important; color: #fff !important; } }\n"
         "  span.wkend {background-color: #E8E8E8}\n"
         "  pre { font-size: 10;}\n"
         "  a {text-decoration: none;}\n"

@@ -47,3 +47,5 @@ a {
 .histo li a:hover .height {
     background: #2d7bb2;
 }
+
+@media (prefers-color-scheme: dark) { body { background-color: #000 !important; color: #fff !important; } a:link { color: #8ab4f8; } a:visited { color: #c58af9; } span.wkend { background-color: #333 !important; } div.pix img { background-color: #222 !important; } button { background-color: #333 !important; color: #fff !important; } }
